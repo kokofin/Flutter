@@ -59,10 +59,12 @@ class ListContactHp extends StatelessWidget {
           leading: CircleAvatar(
             backgroundColor: Colors.black,
             child: Text(
-              contacts[index].username.substring(0, 1),
+              contacts[index].username.substring(0, 1),// kode ini digunakan untuk mengambil karakter pertama dari string username pada objek Contact 
+              //dengan indeks pada daftar kontak.Metode substring digunakan untuk mengambil sebagian karakter dari sebuah string
               style: const TextStyle(color: Colors.white),
             ),
           ),
+          //kode yang menambahkan sebuah icon panggilan pada ListTile di sebelah kanan
           trailing: const Icon(Icons.call),
           onTap: () {
             // action when the list tile is tapped
